@@ -8,7 +8,7 @@
     },
     "devDependencies": {},
     "scripts": {
-        "deploy": "gh-pages -d TestTask"
+        "deploy": "gh-pages -d testpage"
     },
     "keywords": [],
     "author": "",
