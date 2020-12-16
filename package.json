@@ -1,5 +1,5 @@
 {
-    "name": "StaticTestPage",
+    "name": "TestTask",
     "version": "1.0.0",
     "description": "",
     "main": "script.js",
@@ -8,7 +8,7 @@
     },
     "devDependencies": {},
     "scripts": {
-        "deploy": "gh -d StaticTestPage"
+        "deploy": "gh-pages -d TestTask"
     },
     "keywords": [],
     "author": "",
