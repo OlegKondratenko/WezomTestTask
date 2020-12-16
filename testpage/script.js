@@ -86,14 +86,25 @@ loginForm.addEventListener('submit', (e) => {
     const minPassLength = 4;
     let addressInput = loginForm.querySelector('#email');
     let passInput = loginForm.querySelector('#pass');
-    validateLength(passInput.value, minPassLength) || makeWarning(passInput, `password must be longer than ${minPassLength} characters`)
-    validateEmail(addressInput.value) || makeWarning(addressInput, 'incorrect email');
-
+    if (!validateLength(passInput.value, minPassLength)) {
+        makeWarning(passInput, `password must be longer than ${minPassLength} characters`);
+        return false
+    }
+    if (!validateEmail(addressInput.value)) {
+        makeWarning(addressInput, 'incorrect email');
+        return false
+    }
+    e.target.reset();
+    HideModal();
 })
 callbackFrom.addEventListener('submit', (e) => {
     e.preventDefault();
     let phoneInput = callbackFrom.querySelector('[type="tel"]');
-    validatePhoneNumber(phoneInput.value) || makeWarning(phoneInput, "Please, enter valid phone number")
+    if (!validatePhoneNumber(phoneInput.value)) {
+        makeWarning(phoneInput, "Please, enter valid phone number")
+    }
+    e.target.reset();
+    HideModal();
 })
 subscribeForm.addEventListener('submit', (e) => {
     e.preventDefault()
