@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaticTestPage</title>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <div>
+                    <a href="#">
+                        <li class="header__nav-list-item">Главная</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <li class="header__nav-list-item">О компании</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <li class="header__nav-list-item">Ссылка 1</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <li class="header__nav-list-item">Ссылка 2</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <li class="header__nav-list-item">Ссылка 3</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <button data-modal="login" class="header__button orange_theme_btn" id="login">
+            <img src="assets/HeaderButton.png" alt="headerBtn">
+            <p>Вход</p>
+        </button>
+    </header>
+    <main class="main">
+        <aside class="main__aside">
+            <div class="main__aside-logo">
+                <img src="assets/TestLogo.png" alt="testLogo">
+            </div>
+            <div class="main__aside-menu">
+                <div class="main__aside-menu-item gradient-btn">
+                    <div class="burger"><img src="assets/burger.png" alt="burger"></div>
+                    <p>Меню</p>
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+                <div class="main__aside-menu-item">
+                    <p>Ссылка 1</p>
+                    <img src="assets/asideArrow.png" alt="arrow">
+                </div>
+
+            </div>
+
+        </aside>
+        <section class="main__section">
+            <div class="main__section-header">
+                <div class="main__section-header-contacts">
+                    <span class="main__section-header-phone">+380 98 170 00 740</span>
+                    <span class="main__section-header-phone">+380 98 170 00 740</span>
+                    <button class="main__section-call orange_theme_btn" data-modal='callback' id="callback-btn"><img src="assets/phone.png" alt="phone"> ПЕРЕЗВОНИТЬ МНЕ</button>
+                </div>
+                <div class="main__section-header-orders">
+                    <div data-counter='0' class="main__section-header-orders-item header-compare ">
+                        <img src="assets/compare.png" alt="copmare">
+                        <p>СРАВНЕНИЕ</p>
+                    </div>
+                    <div data-counter='0' class="main__section-header-orders-item header-favorite ">
+                        <img src="assets/favorites.png" alt="favorites">
+                        <p>ИЗБРАННОЕ</p>
+                    </div>
+                    <div data-counter='0' class="main__section-header-orders-item  header-bucket">
+                        <img src="assets/bucket.png" alt="bucket">
+                        <p>КОРЗИНА</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__section-search">
+                <form action="#" id='search'>
+                    <input type="search" minlength="2" required placeholder="Поиск по сайту">
+                    <div class="vertical-line"></div>
+                    <select name="categories" id="1" value='asdfas'>
+                             <option >Все категории</option>
+                    </select>
+
+                    <button class="orange_theme_btn">ПОИСК</button>
+                </form>
+            </div>
+            <div class="main__section-filter">
+
+                <div class="main__section-filter-header">
+                    <ul class="main__section-filter-list">
+                        <li class="main__section-filter-list-item"><img src="assets/car.png" alt="">Ссылка 1</li>
+                        <li class="main__section-filter-list-item"><img src="assets/truck.png" alt="truck">Ссылка 2</li>
+                        <li class="main__section-filter-list-item"><img src="assets/wheel.png" alt="wheel">Ссылка 3</li>
+                        <li class="main__section-filter-list-item"><img src="assets/oil.png" alt="oil">Ссылка 4</li>
+                        <li class="main__section-filter-list-item"><img src="assets/acamulator.png" alt="ac">Ссылка 5</li>
+                    </ul>
+                </div>
+                <div class="main__section-calculator">
+                    <div class="main__section-filter-tab">
+                        <button class="main__section-filter-tab-button">Tab 1</button>
+                        <button class="main__section-filter-tab-button active">Tab 2</button>
+                    </div>
+                    <form class="main__section-filter-form" id='filter'>
+                        <select class="main__section-filter-select" name="Sel1" id=""><option>Select1</option><option>Select2</option></select>
+                        <select class="main__section-filter-select" name="Sel2" id=""><option>Select1</option></select>
+                        <select class="main__section-filter-select" name="Sel3" id=""><option>Select1</option></select>
+                        <select class="main__section-filter-select" name="Sel4" id=""><option>Select1</option></select>
+
+
+                        <select class="main__section-filter-select col-2 row-2" name="Sel5" id=""><option>Select1</option></select>
+
+                        <div class="main__section-filter-form-cost col-3 row-2">
+                            <label for="cost">Цена</label>
+                            <input type="number" min='0' id="cost" placeholder="count">
+                            <input type="number" min='0' placeholder="result">
+                        </div>
+                        <button type="reset" form="filter" class="main__section-filter-form-clear clear-btn col-1 row-3">X Очистить фильтр</button>
+                        <button class="main__section-filter-form-submit col-4 row-3 gradient-btn">Применить фильтр</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="main__catalog">
+            <div class="section__catalog-header">
+                <h2 class="section__catalog-header-heading"> Карточки товаров</h2>
+                <a href="#" class="section__catalog-header-link link">Ссылка в каталог --></a>
+            </div>
+            <div class="section__catalog-products">
+                <div class="section__catalog-card">
+                    <div class="section__catalog-card-mark">Mark
+                    </div>
+                    <span class="section__catalog-card-heading link">Антифриз Fosser Antifreeze 
+FA 12 Readymix 1 л Concentrat, Germany</span>
+                    <div class="section__catalog-card-rating">
+                        <div class="section__catalog-card-stars">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <span>Отзывы(10)</span>
+                        </div>
+
+                        <span>В наличии: 24шт.</span>
+                    </div>
+                    <div class="section__catalog-card-descrition">
+                        <div class="section__catalog-card-props">
+                            <span><img src="assets/sun.png" alt="sun">Летняя</span>
+                            <span><img src="assets/lightCar.png" alt="lightCar">Легковая</span>
+                            <span><img src="assets/new.png" alt="new">Новая</span>
+                        </div>
+                        <img src="assets/bigWheel1.png" alt="wheelPng">
+                    </div>
+                    <div class="section__catalog-card-specials">
+                        <div class="section__catalog-card-new">Новинка</div>
+                        <div class="section__catalog-card-hit">Хит</div>
+                        <div class="section__catalog-card-discount">Скидка</div>
+                    </div>
+                    <div class="section__catalog-card-cost">
+                        <span class="section__catalog-card-cost-current">599 грн.</span>
+                        <div class="line-throught"><span class="section__catalog-card-cost-discount">1250 грн</span></div>
+                    </div>
+                    <button class="section__catalog-card-acquire gradient-btn">
+                        <img src="assets/bucketSmall.png" alt="bucket">
+                        <span class="section__catalog-card-buy">Купить товар</span>
+                    </button>
+                    <div class="section__catalog-card-match">
+                        <div class="section__catalog-card-match-compare">
+                            <img src="assets/compareSmall.png" alt="compare">
+                            <span class="link">Сравнить товар</span>
+                        </div>
+                        <div class="section__catalog-card-match-favorites">
+                            <img src="assets/favoriteSmall.png" alt="favorites">
+                            <span class="link">В избранное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__catalog-card">
+                    <div class="section__catalog-card-mark">Mark
+                    </div>
+                    <span class="section__catalog-card-heading link">Антифриз Fosser Antifreeze 
+FA 12 Readymix 1 л Concentrat, Germany</span>
+                    <div class="section__catalog-card-rating">
+                        <div class="section__catalog-card-stars">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                        </div>
+
+                        <span>В наличии: 24шт.</span>
+                    </div>
+                    <div class="section__catalog-card-descrition">
+                        <div class="section__catalog-card-props">
+                            <span><img src="assets/sun.png" alt="sun">Летняя</span>
+                            <span><img src="assets/new.png" alt="new">Новая</span>
+                        </div>
+                        <img src="assets/bigWheel2.png" alt="wheelPng">
+                    </div>
+                    <div class="section__catalog-card-specials">
+                        <div class="section__catalog-card-new">Новинка</div>
+                        <div class="section__catalog-card-hit">Хит</div>
+                    </div>
+                    <div class="section__catalog-card-cost">
+                        <span class="section__catalog-card-cost-current">599 грн.</span>
+                        <div class="line-throught"><span class="section__catalog-card-cost-discount">1250 грн</span></div>
+                    </div>
+                    <button class="section__catalog-card-acquire gradient-btn">
+                        <img src="assets/bucketSmall.png" alt="bucket">
+                        <span class="section__catalog-card-buy">Купить товар</span>
+                    </button>
+                    <div class="section__catalog-card-match">
+                        <div class="section__catalog-card-match-compare">
+                            <img src="assets/compareSmall.png" alt="compare">
+                            <span class="link">Сравнить товар</span>
+                        </div>
+                        <div class="section__catalog-card-match-favorites">
+                            <img src="assets/favoriteSmall.png" alt="favorites">
+                            <span class="link">В избранное</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__catalog-card">
+                    <div class="section__catalog-card-mark">Mark
+                    </div>
+                    <span class="section__catalog-card-heading link">Антифриз Fosser Antifreeze 
+FA 12 Readymix 1 л Concentrat, Germany</span>
+                    <div class="section__catalog-card-rating">
+                        <div class="section__catalog-card-stars">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <img src="assets/foggyStar.png" alt="star">
+                            <span>Без отзывов</span>
+                        </div>
+
+                        <span>В наличии: 24шт.</span>
+                    </div>
+                    <div class="section__catalog-card-descrition">
+                        <div class="section__catalog-card-props">
+                            <span><img src="assets/sun.png" alt="sun">Летняя</span>
+                            <span><img src="assets/lightCar.png" alt="lightCar">Легковая</span>
+                            <span><img src="assets/new.png" alt="new">Новая</span>
+                        </div>
+                        <img src="assets/bigWheel1.png" alt="wheelPng">
+                    </div>
+                    <div class="section__catalog-card-specials">
+                        <div class="section__catalog-card-new">Новинка</div>
+                    </div>
+                    <div class="section__catalog-card-cost">
+                        <span class="section__catalog-card-cost-current">9570 грн.</span>
+                        <div class="line-throught"><span class="section__catalog-card-cost-discount">11250 грн</span></div>
+                    </div>
+                    <button class="section__catalog-card-acquire gradient-btn">
+                        <img src="assets/bucketSmall.png" alt="bucket">
+                        <span class="section__catalog-card-buy">Купить товар</span>
+                    </button>
+                    <div class="section__catalog-card-match">
+                        <div class="section__catalog-card-match-compare">
+                            <img src="assets/compareSmall.png" alt="compare">
+                            <span class="link">Сравнить товар</span>
+                        </div>
+                        <div class="section__catalog-card-match-favorites">
+                            <img src="assets/favoriteSmall.png" alt="favorites">
+                            <span class="link">В избранное</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__catalog-card">
+                    <div class="section__catalog-card-mark">Mark
+                    </div>
+                    <span class="section__catalog-card-heading link">Антифриз Fosser Antifreeze 
+FA 12 Readymix 1 л Concentrat, Germany</span>
+                    <div class="section__catalog-card-rating">
+                        <div class="section__catalog-card-stars">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <img src="assets/brightStar.png" alt="star">
+                            <span>Отзывы(10)</span>
+                        </div>
+
+                        <span>В наличии: 24шт.</span>
+                    </div>
+                    <div class="section__catalog-card-descrition">
+                        <div class="section__catalog-card-props">
+                            <span><img src="assets/sun.png" alt="sun">Летняя</span>
+                            <span><img src="assets/lightCar.png" alt="lightCar">Легковая</span>
+                        </div>
+                        <img src="assets/bigWheel1.png" alt="wheelPng">
+                    </div>
+                    <div class="section__catalog-card-specials">
+                        <div class="section__catalog-card-new">Новинка</div>
+                        <div class="section__catalog-card-hit">Хит</div>
+                        <div class="section__catalog-card-discount">Скидка</div>
+                    </div>
+                    <div class="section__catalog-card-cost">
+                        <span class="section__catalog-card-cost-current">599 грн.</span>
+                    </div>
+                    <button class="section__catalog-card-acquire gradient-btn">
+                        <img src="assets/bucketSmall.png" alt="bucket">
+                        <span class="section__catalog-card-buy">Купить товар</span>
+                    </button>
+                    <div class="section__catalog-card-match">
+                        <div class="section__catalog-card-match-compare">
+                            <img src="assets/compareSmall.png" alt="compare">
+                            <span class="link">Сравнить товар</span>
+                        </div>
+                        <div class="section__catalog-card-match-favorites">
+                            <img src="assets/favoriteSmall.png" alt="favorites">
+                            <span class="link">В избранное</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__block">
+                <div class="footer__block-heading">
+                    <h2 class="footer__block-header">Block 1</h2>
+                </div>
+                <div class="footer__block-subscribe">
+                    <p class="footer__block-subscribe-heading1">Будьте в курсе новостей и новинок!</p>
+                    <p class="footer__block-subscribe-heading2">Подписывайтесь на рассылку</p>
+                    <form class="footer__block-subscribe-form" id='subscribe'>
+                        <input type="email" required placeholder="Укажите свой email для подписки">
+                        <button class="footer__block-subscribe-form-btn orange_theme_btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__block-right">
+                <div class="footer__block">
+                    <div class="footer__block-heading">
+                        <h2 class="footer__block-header">Блок ссылок 1</h2>
+                    </div>
+                    <div class="footer__block-links">
+                        <p class="footer__block-link link">Ссылка 1</p>
+                        <p class="footer__block-link link">Ссылка 2</p>
+                        <p class="footer__block-link link">Ссылка 3</p>
+                        <p class="footer__block-link link">Ссылка 4</p>
+
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__block-heading">
+                        <h2 class="footer__block-header">Блок 2</h2>
+                    </div>
+                    <div class="footer__block-links">
+                        <p class="footer__block-link link">Ссылка 1</p>
+                        <p class="footer__block-link link">Ссылка 2</p>
+                        <p class="footer__block-link link">Ссылка 3</p>
+                        <p class="footer__block-link link">Ссылка 4</p>
+
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__block-heading">
+                        <h2 class="footer__block-header">Блок ссылок 3</h2>
+                    </div>
+                    <div class="footer__block-links">
+                        <p class="footer__block-link link">Ссылка 1</p>
+                        <p class="footer__block-link link">Ссылка 2</p>
+                        <p class="footer__block-link link">Ссылка 3</p>
+                        <p class="footer__block-link link">Ссылка 4</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social">
+            <div class="footer__social-rights">
+                <img class="footer__social-test-logo" src="assets/foggyTestLogo.png" alt="logo">
+                <div class="vertical-line"></div>
+                <p class="footer__socials-copytight">&copy; Copyrith 2017. Тестовое задание Wezom</p>
+            </div>
+            <div class="footer__social-networks">
+                <div class="footer__social-networks-logos">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+
+  <path class="cls-1" d="M999.77,1651.72c0.53,0.52,1.09,1,1.57,1.57a4.423,4.423,0,0,1,.56.8,0.577,0.577,0,0,1-.36.9h-2.327a1.8,1.8,0,0,1-1.484-.6c-0.322-.33-0.621-0.67-0.932-1.01a2.045,2.045,0,0,0-.419-0.37,0.486,0.486,0,0,0-.776.19,2.4,2.4,0,0,0-.246,1.08,0.614,0.614,0,0,1-.742.71,5.955,5.955,0,0,1-3.335-.71,7.386,7.386,0,0,1-2.245-2.09,28.058,28.058,0,0,1-2.953-5.23c-0.187-.42-0.05-0.64.407-0.65q1.141-.015,2.283,0a0.677,0.677,0,0,1,.633.47,13.723,13.723,0,0,0,1.546,2.85,2.445,2.445,0,0,0,.585.64,0.354,0.354,0,0,0,.6-0.18,1.929,1.929,0,0,0,.134-0.59,8.944,8.944,0,0,0-.037-2.1,0.889,0.889,0,0,0-.748-0.8c-0.223-.04-0.19-0.12-0.082-0.25a0.856,0.856,0,0,1,.715-0.35h2.634a0.626,0.626,0,0,1,.564.68l0,2.91a0.836,0.836,0,0,0,.372.74,0.518,0.518,0,0,0,.526-0.25,9.214,9.214,0,0,0,1.483-2.27c0.178-.36.332-0.73,0.48-1.1a0.571,0.571,0,0,1,.6-0.41l2.533,0.01a1.77,1.77,0,0,1,.23.01,0.438,0.438,0,0,1,.41.67,6.33,6.33,0,0,1-1.01,1.74c-0.42.58-.87,1.14-1.293,1.73a0.779,0.779,0,0,0,.123,1.26h0Z" transform="translate(-986 -1646)"/>
+</svg>
+
+                    </div>
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
+    
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1057.7,1643h-1.92c-2.16,0-3.55,1.55-3.55,3.94v1.81h-1.93a0.315,0.315,0,0,0-.3.33v2.63a0.321,0.321,0,0,0,.3.33h1.93v6.63a0.321,0.321,0,0,0,.3.33h2.52a0.315,0.315,0,0,0,.3-0.33v-6.63h2.26a0.321,0.321,0,0,0,.3-0.33v-2.63a0.317,0.317,0,0,0-.09-0.23,0.3,0.3,0,0,0-.21-0.1h-2.26v-1.54a0.893,0.893,0,0,1,1.06-1.11h1.29a0.321,0.321,0,0,0,.3-0.33v-2.44A0.321,0.321,0,0,0,1057.7,1643Z" transform="translate(-1050 -1643)"/>
+                        </svg>
+                    </div>
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1120.56,1645.24a6.616,6.616,0,0,1-2.09.8,3.283,3.283,0,0,0-5.68,2.24,3.081,3.081,0,0,0,.09.75,9.323,9.323,0,0,1-6.77-3.43,3.293,3.293,0,0,0,1.02,4.38,3.286,3.286,0,0,1-1.49-.41v0.04a3.293,3.293,0,0,0,2.64,3.22,3.576,3.576,0,0,1-.87.11,4.205,4.205,0,0,1-.62-0.05,3.3,3.3,0,0,0,3.07,2.28,6.582,6.582,0,0,1-4.08,1.4c-0.26,0-.52-0.02-0.78-0.04a9.34,9.34,0,0,0,14.37-7.87l-0.01-.43a6.589,6.589,0,0,0,1.64-1.69,6.308,6.308,0,0,1-1.88.51A3.329,3.329,0,0,0,1120.56,1645.24Z" transform="translate(-1105 -1645)"/>
+                        </svg>
+                    </div>
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11">
+                        <path class="cls-1" d="M1178.38,1645.94c-0.58-.67-1.65-0.94-3.68-0.94h-7.4c-2.08,0-3.16.29-3.74,1-0.56.7-.56,1.73-0.56,3.15v2.7c0,2.75.67,4.15,4.3,4.15h7.4c1.76,0,2.74-.24,3.37-0.83,0.65-.61.93-1.6,0.93-3.32v-2.7C1179,1647.65,1178.96,1646.62,1178.38,1645.94Zm-5.11,4.93-3.35,1.72a0.519,0.519,0,0,1-.24.05,0.5,0.5,0,0,1-.27-0.07,0.484,0.484,0,0,1-.25-0.43v-3.42a0.5,0.5,0,0,1,.25-0.43,0.522,0.522,0,0,1,.5-0.01l3.36,1.7a0.512,0.512,0,0,1,.28.45A0.5,0.5,0,0,1,1173.27,1650.87Z" transform="translate(-1163 -1645)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer__social-wezom">
+                    <img src="assets/wezom.png" alt="wezom">
+                    <div class="vertical-line"></div>
+                    <div class="footer__social-wezom-text">
+                        <p>Разработка тестового</p>
+                        <p>Wezom agency</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="modal-window" id='login-modal'>
+        <div class="modal-wrapper">
+            <div class="auth-email">
+                <h2 class="auth-email-heading">Вход в личный кабинет</h2>
+                <form class="auth-email-form" id='authentication' action="">
+                    <div class="form-block"><label for="email">Ваш email</label>
+                        <input type="text" id="email"></div>
+                    <div class="form-block">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <div class="checkbox-block">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Запомнить меня</label>
+                    </div>
+                    <div class="auth-register-recover">
+                        <a class="auth-forget link" href="#">Забыли пароль?</a>
+                        <a class="auth-register link" href="#">Регистрация</a>
+                    </div>
+                    <button class="auth-login">Войти в личный кабинет</button>
+                </form>
+            </div>
+            <div class="modal-vertical-line"></div>
+            <div class="auth-socials">
+                <h2 class="auth-email-heading">Вход с помощью</h2>
+                <button class="auth-facebook"><img src="assets/facebook.svg" alt="fb">Facebook</button>
+                <button class="auth-twitter"><img src="assets/twitter.svg" alt="twitter">Twitter</button>
+                <button class="auth-google"><img src="assets/google.png" alt="google">Google</button>
+            </div>
+        </div>
+        <div class="exit">
+            <img src="assets/exit.png" alt="exit">
+        </div>
+    </div>
+
+
+    <div class="modal-window" id='callback-modal'>
+        <div class="modal-wrapper">
+            <form class="callback-modal" id="callback-form">
+                <h2 class="callback-modal-heading">Перезвоните мне</h2>
+                <div class="form-block">
+                    <label class="callback-modal-phone-label" for="phone">Номер телефона</label>
+                    <input class="callback-modal-phone" value="" type="tel">
+                </div>
+                <button class="orange_theme_btn callback-modal-btn ">Перезвоните мне</button>
+            </form>
+            <div class="exit">
+                <img src="assets/exit.png" alt="exit">
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-overlay ">
+    </div>
+
+    <script src="script.js "></script>
+</body>
+
+
+</html>
