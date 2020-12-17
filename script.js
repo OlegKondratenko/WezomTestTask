@@ -28,16 +28,28 @@ const showIncrementedCounter = (elem) => {
     elem.classList.add('counter');
 }
 const addToCompare = ({ target }) => {
+    if (target.dataset.clicked === '1') {
+        return 1
+    }
+    target.setAttribute("data-clicked", "1");
     target.innerHTML = "В сравнении";
     const copmareDiv = document.querySelector('.header-compare');
     showIncrementedCounter(copmareDiv);
 }
 const addToFavorite = ({ target }) => {
+    if (target.dataset.clicked === '1') {
+        return 1
+    }
+    target.setAttribute("data-clicked", "1");
     target.innerHTML = "В избранном";
     const copmareDiv = document.querySelector('.header-favorite');
     showIncrementedCounter(copmareDiv);
 }
 const addToBucket = ({ target }) => {
+    if (target.dataset.clicked === '1') {
+        return 1
+    }
+    target.setAttribute("data-clicked", "1");
     const copmareDiv = document.querySelector('.header-bucket');
     showIncrementedCounter(copmareDiv);
 }
