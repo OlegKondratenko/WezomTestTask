@@ -82,7 +82,7 @@ select {
     align-items: center;
 }
 
-.header__nav-list div {
+.header__nav-list li {
     height: 100%;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ select {
     margin-right: 1.875rem;
 }
 
-.header__nav-list div:hover {
+.header__nav-list li:hover {
     border-bottom: 0.125rem solid #ffc925;
 }
 
@@ -98,6 +98,8 @@ select {
     height: 100%;
     list-style-type: none;
     color: #c3c3c3;
+    display: flex;
+    align-items: center;
 }
 
 .header__nav-list-item:active {
@@ -116,7 +118,7 @@ select {
     color: #ffffff;
 }
 
-.header__button p {
+.header__button span {
     padding: 0.625rem;
 }
 
