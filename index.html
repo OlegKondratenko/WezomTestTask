@@ -17,36 +17,16 @@
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <div>
-                    <a href="#">
-                        <li class="header__nav-list-item">Главная</li>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <li class="header__nav-list-item">О компании</li>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <li class="header__nav-list-item">Ссылка 1</li>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <li class="header__nav-list-item">Ссылка 2</li>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <li class="header__nav-list-item">Ссылка 3</li>
-                    </a>
-                </div>
+                <li class="header__nav-list-item">Главная</li>
+                <li class="header__nav-list-item">О компании</li>
+                <li class="header__nav-list-item">Ссылка 1</li>
+                <li class="header__nav-list-item">Ссылка 2</li>
+                <li class="header__nav-list-item">Ссылка 3</li>
             </ul>
         </nav>
         <button data-modal="login" class="header__button orange_theme_btn" id="login">
             <img src="assets/HeaderButton.png" alt="headerBtn">
-            <p>Вход</p>
+            <span>Вход</span>
         </button>
     </header>
     <main class="main">
@@ -117,10 +97,9 @@
                 <form action="#" id='search'>
                     <input type="search" minlength="2" required placeholder="Поиск по сайту">
                     <div class="vertical-line"></div>
-                    <select name="categories" id="1" value='asdfas'>
+                    <select name="categories" id="1">
                              <option >Все категории</option>
                     </select>
-
                     <button class="orange_theme_btn">ПОИСК</button>
                 </form>
             </div>
@@ -141,13 +120,13 @@
                         <button class="main__section-filter-tab-button active">Tab 2</button>
                     </div>
                     <form class="main__section-filter-form" id='filter'>
-                        <select class="main__section-filter-select" name="Sel1" id=""><option>Select1</option><option>Select2</option></select>
-                        <select class="main__section-filter-select" name="Sel2" id=""><option>Select1</option></select>
-                        <select class="main__section-filter-select" name="Sel3" id=""><option>Select1</option></select>
-                        <select class="main__section-filter-select" name="Sel4" id=""><option>Select1</option></select>
+                        <select class="main__section-filter-select" name="Sel1"><option>Select1</option><option>Select2</option></select>
+                        <select class="main__section-filter-select" name="Sel2"><option>Select1</option></select>
+                        <select class="main__section-filter-select" name="Sel3"><option>Select1</option></select>
+                        <select class="main__section-filter-select" name="Sel4"><option>Select1</option></select>
 
 
-                        <select class="main__section-filter-select col-2 row-2" name="Sel5" id=""><option>Select1</option></select>
+                        <select class="main__section-filter-select col-2 row-2" name="Sel5"><option>Select1</option></select>
 
                         <div class="main__section-filter-form-cost col-3 row-2">
                             <label for="cost">Цена</label>
@@ -431,12 +410,12 @@ FA 12 Readymix 1 л Concentrat, Germany</span>
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
     
-                        <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1057.7,1643h-1.92c-2.16,0-3.55,1.55-3.55,3.94v1.81h-1.93a0.315,0.315,0,0,0-.3.33v2.63a0.321,0.321,0,0,0,.3.33h1.93v6.63a0.321,0.321,0,0,0,.3.33h2.52a0.315,0.315,0,0,0,.3-0.33v-6.63h2.26a0.321,0.321,0,0,0,.3-0.33v-2.63a0.317,0.317,0,0,0-.09-0.23,0.3,0.3,0,0,0-.21-0.1h-2.26v-1.54a0.893,0.893,0,0,1,1.06-1.11h1.29a0.321,0.321,0,0,0,.3-0.33v-2.44A0.321,0.321,0,0,0,1057.7,1643Z" transform="translate(-1050 -1643)"/>
+                        <path  data-name="Forma 1" class="cls-1" d="M1057.7,1643h-1.92c-2.16,0-3.55,1.55-3.55,3.94v1.81h-1.93a0.315,0.315,0,0,0-.3.33v2.63a0.321,0.321,0,0,0,.3.33h1.93v6.63a0.321,0.321,0,0,0,.3.33h2.52a0.315,0.315,0,0,0,.3-0.33v-6.63h2.26a0.321,0.321,0,0,0,.3-0.33v-2.63a0.317,0.317,0,0,0-.09-0.23,0.3,0.3,0,0,0-.21-0.1h-2.26v-1.54a0.893,0.893,0,0,1,1.06-1.11h1.29a0.321,0.321,0,0,0,.3-0.33v-2.44A0.321,0.321,0,0,0,1057.7,1643Z" transform="translate(-1050 -1643)"/>
                         </svg>
                     </div>
                     <div class="svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
-                        <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1120.56,1645.24a6.616,6.616,0,0,1-2.09.8,3.283,3.283,0,0,0-5.68,2.24,3.081,3.081,0,0,0,.09.75,9.323,9.323,0,0,1-6.77-3.43,3.293,3.293,0,0,0,1.02,4.38,3.286,3.286,0,0,1-1.49-.41v0.04a3.293,3.293,0,0,0,2.64,3.22,3.576,3.576,0,0,1-.87.11,4.205,4.205,0,0,1-.62-0.05,3.3,3.3,0,0,0,3.07,2.28,6.582,6.582,0,0,1-4.08,1.4c-0.26,0-.52-0.02-0.78-0.04a9.34,9.34,0,0,0,14.37-7.87l-0.01-.43a6.589,6.589,0,0,0,1.64-1.69,6.308,6.308,0,0,1-1.88.51A3.329,3.329,0,0,0,1120.56,1645.24Z" transform="translate(-1105 -1645)"/>
+                        <path  data-name="Forma 1" class="cls-1" d="M1120.56,1645.24a6.616,6.616,0,0,1-2.09.8,3.283,3.283,0,0,0-5.68,2.24,3.081,3.081,0,0,0,.09.75,9.323,9.323,0,0,1-6.77-3.43,3.293,3.293,0,0,0,1.02,4.38,3.286,3.286,0,0,1-1.49-.41v0.04a3.293,3.293,0,0,0,2.64,3.22,3.576,3.576,0,0,1-.87.11,4.205,4.205,0,0,1-.62-0.05,3.3,3.3,0,0,0,3.07,2.28,6.582,6.582,0,0,1-4.08,1.4c-0.26,0-.52-0.02-0.78-0.04a9.34,9.34,0,0,0,14.37-7.87l-0.01-.43a6.589,6.589,0,0,0,1.64-1.69,6.308,6.308,0,0,1-1.88.51A3.329,3.329,0,0,0,1120.56,1645.24Z" transform="translate(-1105 -1645)"/>
                         </svg>
                     </div>
                     <div class="svg-container">
@@ -462,7 +441,7 @@ FA 12 Readymix 1 л Concentrat, Germany</span>
         <div class="modal-wrapper">
             <div class="auth-email">
                 <h2 class="auth-email-heading">Вход в личный кабинет</h2>
-                <form class="auth-email-form" id='authentication' action="">
+                <form class="auth-email-form" id='authentication' action="#">
                     <div class="form-block"><label for="email">Ваш email</label>
                         <input type="text" id="email"></div>
                     <div class="form-block">
@@ -499,8 +478,8 @@ FA 12 Readymix 1 л Concentrat, Germany</span>
             <form class="callback-modal" id="callback-form">
                 <h2 class="callback-modal-heading">Перезвоните мне</h2>
                 <div class="form-block">
-                    <label class="callback-modal-phone-label" for="phone">Номер телефона</label>
-                    <input class="callback-modal-phone" value="" type="tel">
+                    <label class="callback-modal-phone-label" for="phone-input">Номер телефона</label>
+                    <input class="callback-modal-phone" id="phone-input" type="tel">
                 </div>
                 <button class="orange_theme_btn callback-modal-btn ">Перезвоните мне</button>
             </form>
